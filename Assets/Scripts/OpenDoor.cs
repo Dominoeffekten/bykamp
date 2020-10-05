@@ -2,27 +2,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//åben døren
 // https://www.youtube.com/watch?v=3cJ_uq1m-dg&vl=fr
-
 
 //open door
 public class OpenDoor : MonoBehaviour
 {
-
 	public Transform target;
 	Rigidbody rb;
-
+    AudioSource sound;
+    bool playSound;
+    
 
     // Start is called before the first frame update
-    void Start()
-    {
+    void Start() {
         rb = GetComponent<Rigidbody>();
+        sound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
-    void Update()
-    {
-	rb.MovePosition(target.transform.position);
-        
+    void FixedUpdate() {
+	    rb.MovePosition(target.transform.position); 
+        MakeSound();
+    } 
+    void MakeSound(){
+        sound.Play(); 
     }
 }
