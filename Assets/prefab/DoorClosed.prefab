@@ -238,8 +238,8 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -267,8 +267,8 @@ HingeJoint:
     freeSpin: 0
   m_UseLimits: 1
   m_Limits:
-    min: -87.10404
-    max: 19.104322
+    min: -100.95291
+    max: 88.75037
     bounciness: 0
     bounceMinVelocity: 0.2
     contactDistance: 0
@@ -291,7 +291,7 @@ GameObject:
   - component: {fileID: 6277464164819427839}
   - component: {fileID: 6277464164819427832}
   - component: {fileID: 6277464164819427833}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Greb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -370,7 +370,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0

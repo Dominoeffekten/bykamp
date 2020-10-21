@@ -12,7 +12,6 @@ public class OpenDoor : MonoBehaviour
 	Rigidbody rb;
     AudioSource sound;
     bool playSound;
-    
 
     // Start is called before the first frame update
     void Start() {
@@ -23,6 +22,10 @@ public class OpenDoor : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate() {
 	    rb.MovePosition(target.transform.position); 
+
+        Debug.Log(target.transform.position);
+        
+
         MakeSound();
     } 
     void MakeSound(){
