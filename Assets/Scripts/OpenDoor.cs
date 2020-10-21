@@ -11,8 +11,7 @@ public class OpenDoor : MonoBehaviour
 	public Transform target;
 	Rigidbody rb;
     AudioSource sound;
-    bool playSound;
-
+    
     // Start is called before the first frame update
     void Start() {
         rb = GetComponent<Rigidbody>();
@@ -26,9 +25,6 @@ public class OpenDoor : MonoBehaviour
         Debug.Log(target.transform.position);
         
 
-        MakeSound();
+       
     } 
-    void MakeSound(){
-        sound.Play(); 
-    }
 }
