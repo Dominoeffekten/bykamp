@@ -2,9 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-// https://docs.unity3d.com/ScriptReference/Material-mainTextureScale.html
-
-public class Wall : MonoBehaviour
+public class DoorWall : MonoBehaviour
 {
     Renderer rend;
     // Start is called before the first frame update
@@ -19,8 +17,8 @@ public class Wall : MonoBehaviour
     {
         Debug.Log(gameObject.name);
         //Debug.Log(GameObject.name);
-        float scaleX = 0.3f;
-        float scaleY = 2.2f;
+        float scaleX = 0.8f;
+        float scaleY = 0.8f;
         rend.material.mainTextureScale = new Vector2(scaleX, scaleY);
     }
 }
